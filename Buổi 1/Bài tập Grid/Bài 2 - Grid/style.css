@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  height: 600px;
+}
+
+/* ========== CỘT 1 ========== */
+.col1 {
+  background: linear-gradient(to bottom right, #52c234, #061700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ========== CỘT 2 ========== */
+.col2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* Hàng 1 trong Cột 2 */
+.row1 {
+  background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hàng 2 + 3: 2 ô mỗi hàng */
+.row2,
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.row2 .item,
+.row3 .item {
+  background: linear-gradient(to right, #f85032, #e73827);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== CỘT 3 ========== */
+.col3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.col3 .item {
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
