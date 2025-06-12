@@ -1,0 +1,69 @@
+body, * {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --a: #333;
+}
+
+.body { 
+    --ml: 50px;
+    --column: 5;
+
+    /* padding-left: var(--ml); 
+        không cần dùng padding-left nữa, căn giữa bằng flexbox
+    */
+    display: flex;
+    justify-content: center;
+}
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    /* chỗ này lúc đó a dùng sai, chỉ cần margin-left để lấy lại 50px */
+    /* position: relative; */
+    /* left: calc(-1 * var(--ml));    */
+    margin-left: calc(-1 * var(--ml));   
+
+    /* lúc này container đang full màn, 
+    set width cho nó 95% để tiện căn giữa. 
+    code căn giữa ở bên trên, dòng 17 18 */
+    width: 95%;
+}
+
+.container .product {
+    width: calc(calc(100% / var(--column)) - var(--ml));
+    box-shadow: 5px 5px 10px var(--a);
+    margin-left: var(--ml);
+    margin-top: 30px;
+}
+
+.product img {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .body {
+        --column: 4;
+    }
+}
+
+@media (max-width: 992px) {
+    .body {
+        --column: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        --column: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .body {
+        --column: 1;
+    }
+}
+
