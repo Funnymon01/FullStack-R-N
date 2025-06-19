@@ -3,149 +3,432 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitter - Hight Quality Pet Food</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="left-hd">
-          <span class="logo">Kitter</span>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact</a></li>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <a href="#" class="logo">Kitter</a>
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">Home</li>
+              <li class="navbar-item">Shop</li>
+              <li class="navbar-item">Collections</li>
+              <li class="navbar-item">Blogs</li>
+              <li class="navbar-item">Contact</li>
             </ul>
           </nav>
+          <div class="header-action">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-user"></i></button>
+            <button><i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
         </div>
-        <div class="right-hd">
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          <button><i class="fa-solid fa-user"></i></button>
-          <button><i class="fa-solid fa-bag-shopping"></i></button>
-        </div>
-      </div>
-    </header>
-    <!-- Main -->
-    <main>
-      <article>
-        <section class="hero">
-          <h1>
-            <span class="span">High Quality</span><br />
-            <span class="main-title">Pet Food</span>
-          </h1>
-
-          <p class="hero-text">Sale up to 40% off today</p>
-
-          <a href="#" class="btn">Shop Now</a>
+      </header>
+      <main>
+        <section class="section hero">
+          <div class="hero-container">
+            <img src="./images/hero-banner.jpg" alt="ẢNH HERO BANNER" />
+            <div class="title hero">
+              <h1><span>High Quality</span>Pet Food</h1>
+              <p>Sale up to 40% off today</p>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
         </section>
-        <section class="section category" aria-label="category">
-          <div class="container">
-            <h2 class="h2 section-title">
-              <span class="span">Top</span> categories
-            </h2>
 
-            <ul class="category-list">
-              <li class="category-item">
-                <div class="category-card">
-                  <figure class="card-banner img-holder">
-                    <img
-                      src="./images/category-1.jpg"
-                      width="330"
-                      height="300"
-                      loading="lazy"
-                      alt="Cat Food"
-                      class="img-cover"
-                    />
-                  </figure>
+        <section class="section category">
+          <div class="category-container">
+            <h2><span>Top</span> categories</h2>
+            <ul>
+              <li>
+                <div class="category card">
+                  <img src="./images/category-1.jpg" />
                   <h3 class="h3">
-                    <a href="#" class="card-title">Cat Food</a>
+                    <a href="#">Cat Food</a>
                   </h3>
                 </div>
               </li>
-
-              <li class="category-item">
-                <div class="category-card">
-                  <figure class="card-banner img-holder">
-                    <img
-                      src="./images/category-2.jpg"
-                      width="330"
-                      height="300"
-                      loading="lazy"
-                      alt="Cat Toys"
-                      class="img-cover"
-                    />
-                  </figure>
+              <li>
+                <div class="category card">
+                  <img src="./images/category-2.jpg" />
                   <h3 class="h3">
-                    <a href="#" class="card-title">Cat Toys</a>
+                    <a href="#">Cat Toys</a>
                   </h3>
                 </div>
               </li>
-
-              <li class="category-item">
-                <div class="category-card">
-                  <figure class="card-banner img-holder">
-                    <img
-                      src="./images/category-3.jpg"
-                      width="330"
-                      height="300"
-                      loading="lazy"
-                      alt="Dog Food"
-                      class="img-cover"
-                    />
-                  </figure>
+              <li>
+                <div class="category card">
+                  <img src="./images/category-3.jpg" />
                   <h3 class="h3">
-                    <a href="#" class="card-title">Dog Food</a>
+                    <a href="#">Dog Food</a>
                   </h3>
                 </div>
               </li>
-
-              <li class="category-item">
-                <div class="category-card">
-                  <figure class="card-banner img-holder">
-                    <img
-                      src="./images/category-4.jpg"
-                      width="330"
-                      height="300"
-                      loading="lazy"
-                      alt="Dog Toys"
-                      class="img-cover"
-                    />
-                  </figure>
+              <li>
+                <div class="category card">
+                  <img src="./images/category-4.jpg" />
                   <h3 class="h3">
-                    <a href="#" class="card-title">Dog Toys</a>
+                    <a href="#"> Dog Toys</a>
                   </h3>
                 </div>
               </li>
-
-              <li class="category-item">
-                <div class="category-card">
-                  <figure class="card-banner img-holder">
-                    <img
-                      src="./images/category-5.jpg"
-                      width="330"
-                      height="300"
-                      loading="lazy"
-                      alt="Dog Supplements"
-                      class="img-cover"
-                    />
-                  </figure>
+              <li>
+                <div class="category card">
+                  <img src="./images/category-5.jpg" />
                   <h3 class="h3">
-                    <a href="#" class="card-title">Dog Supplements</a>
+                    <a href="#">Dog Supplements </a>
                   </h3>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-      </article>
-    </main>
+
+        <section class="section offer">
+          <div class="offer-wrapper">
+            <div class="offer-container">
+              <ul>
+                <li>
+                  <div class="offer card card-1">
+                    <p>Selected Items. Online Only.</p>
+                    <h3>Hot Summer<br />Deals</h3>
+                    <a href="#">Read More</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="offer card card-2">
+                    <p>Treats & Grooming</p>
+                    <h3>Spoil your true<br />love</h3>
+                    <a href="#">Read More</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="offer card card-3">
+                    <p>Our Brand You Will Love</p>
+                    <h3>New in this<br />year</h3>
+                    <a href="#">Read More</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section product">
+          <h2 class="title product">
+            <span class="highlight">Best</span> Seller
+          </h2>
+
+          <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-1.jpg');
+                  --hover-img: url('./images/product-1_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> <span>(1)</span>
+              </div>
+              <h3 class="product-title">Commodo leo sed porta</h3>
+              <p class="product-price">$15.00</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-2.jpg');
+                  --hover-img: url('./images/product-2_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(0)</span>
+              </div>
+              <h3 class="product-title">Purus consequat congue sit</h3>
+              <p class="product-price">$45.00</p>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-3.jpg');
+                  --hover-img: url('./images/product-3_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(0)</span>
+              </div>
+              <h3 class="product-title">Morbi vel arcu scelerisque</h3>
+              <p class="product-price">$45.00</p>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-4.jpg');
+                  --hover-img: url('./images/product-4_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(0)</span>
+              </div>
+              <h3 class="product-title">Morbi vel arcu scelerisque</h3>
+              <p class="product-price">$49.00</p>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-5.jpg');
+                  --hover-img: url('./images/product-5_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <span>(2)</span>
+              </div>
+              <h3 class="product-title">Ullamcorper dapibus elit</h3>
+              <p class="product-price">$25.00</p>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-6.jpg');
+                  --hover-img: url('./images/product-6_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(0)</span>
+              </div>
+              <h3 class="product-title">Bibendum nec fermentum</h3>
+              <p class="product-price">$35.00</p>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-7.jpg');
+                  --hover-img: url('./images/product-7_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(3)</span>
+              </div>
+              <h3 class="product-title">Suspendisse nulla amet</h3>
+              <p class="product-price">$19.00</p>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/product-8.jpg');
+                  --hover-img: url('./images/product-8_0.jpg');
+                "
+              ></div>
+              <div class="product-rating">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i> <span>(0)</span>
+              </div>
+              <h3 class="product-title">Luctus vel erat varius</h3>
+              <p class="product-price">$22.00</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service">
+          <div class="service-header">
+            <img
+              src="./images/service-image.png"
+              alt="Service Icon"
+              class="service-icon"
+            />
+            <h2 class="service-title">
+              <span class="highlight">What your pet needs</span>, when they need
+              it.
+            </h2>
+          </div>
+
+          <div class="service-grid">
+            <div class="service-card">
+              <div
+                class="service-img"
+                style="background-image: url('./images/service-icon-1.png')"
+              ></div>
+              <h3 class="service-name">Free Same-Day Delivery</h3>
+              <p class="service-desc">
+                Order by 2pm local time to get free delivery on orders $35+
+                today.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div
+                class="service-img"
+                style="background-image: url('./images/service-icon-2.png')"
+              ></div>
+              <h3 class="service-name">30 Day Return</h3>
+              <p class="service-desc">
+                35% off your first order plus 5% off all future orders.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div
+                class="service-img"
+                style="background-image: url('./images/service-icon-3.png')"
+              ></div>
+              <h3 class="service-name">Security payment</h3>
+              <p class="service-desc">
+                25% off your online order of $50+. Available at most locations.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div
+                class="service-img"
+                style="background-image: url('./images/service-icon-4.png')"
+              ></div>
+              <h3 class="service-name">24/7 Support</h3>
+              <p class="service-desc">
+                Shop online to get orders over $35 shipped fast and free.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta">
+          <div class="cta-inner">
+            <div class="cta-banner">
+              <img
+                src="./images/cta-banner.png"
+                alt="Cat Image"
+                class="cta-cat"
+              />
+            </div>
+
+            <div class="cta-content">
+              <img
+                src="./images/cta-icon.png"
+                alt="Guarantee Icon"
+                class="cta-icon"
+              />
+              <h2 class="cta-title">
+                Taste it, love it or we'll replace it…
+                <strong>Guaranteed!</strong>
+              </h2>
+              <p class="cta-text">
+                At Petio, we believe your dog and cat will love their food so
+                much that if they don't … we'll help you find a replacement.
+                That's our taste guarantee.
+              </p>
+              <a href="#" class="cta-button">Find out more</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section brand">
+          <h2 class="brand-title"><span>Popular</span> Brands</h2>
+          <div class="brand-logos">
+            <img src="./images/brand-1.jpg" alt="Brand 1" class="brand-logo" />
+            <img src="./images/brand-2.jpg" alt="Brand 2" class="brand-logo" />
+            <img src="./images/brand-3.jpg" alt="Brand 3" class="brand-logo" />
+            <img src="./images/brand-4.jpg" alt="Brand 4" class="brand-logo" />
+            <img src="./images/brand-5.jpg" alt="Brand 5" class="brand-logo" />
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-col">
+            <h2>Kitter</h2>
+            <p>If you have any question, please contact us at</p>
+            <a href="mailto:support@gmail.com">support@gmail.com</a>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 30 Buttonwood St.Pataskala
+              OH 43062
+            </p>
+            <p><i class="fas fa-phone-alt"></i> (+1)-6234-56-789-1011</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+              <a href="#"><i class="fab fa-twitter"></i></a>
+
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Corporate</h3>
+            <a href="#">Careers</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Information</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Shipping</a>
+            <a href="#">Terms of Service</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <a href="#">Grooming</a>
+            <a href="#">Vet Services</a>
+            <a href="#">Pet Adoption</a>
+            <a href="#">Resource Center</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2022 Made with ♥ by codewithsadee.</p>
+          <img src="./images/payment.png" />
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

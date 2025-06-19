@@ -1,123 +1,634 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/*Reset khoảng trắng mặc định*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* Header */
-.site-header {
-  /* background-color: #f8f9fa;  */
-  padding: 16px 0;
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*header*/
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  /* lồng ảnh */
+  position: relative;
+}
+.logo {
+  text-decoration: none;
+  font-size: 38px;
+  color: white;
+}
+.navbar {
+  margin-left: 20px;
+  margin-right: auto;
+}
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+  color: white;
+}
+.header-action {
+  display: flex;
+  gap: 20px;
+}
+.header-action button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: white;
+}
+
+.hero-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* lồng ảnh */
+.hero-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+/*title hero*/
+
+.title.hero {
+  position: absolute;
+  z-index: 2;
+  color: white;
+
+  top: 180px;
+  left: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"); /* thêm font giống mẫu */
+
+.title.hero h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  font-size: 140px;
+  margin-top: -20px;
+}
+
+.title.hero h1 span {
+  display: block;
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+.title.hero p {
+  font-size: 22px;
+  margin: 25px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.title.hero a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.title.hero a:hover {
+  transition: 0.5s;
+  background-color: #f15a29;
+}
+/*category*/
+.section.category {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.category-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category-container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.category-container h2 span {
+  color: #f15a29;
+}
+
+.category-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.category.card {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category.card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+/* Hover ảnh */
+.category.card img:hover {
+  transform: scale(1.08);
+}
+.category.card h3 a:hover {
+  color: #f15a29;
+}
+.category.card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.category.card h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*Offer*/
+.section.offer {
+  padding: 80px 0; /* Tạo khoảng cách với phần trên */
+  background-color: #fff;
+}
+
+.offer-container {
+  padding: 0 10px; /* Cách lề trái/phải 10px như bạn yêu cầu */
+}
+
+.offer-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Khoảng cách giữa các card */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.offer-container li {
+  flex: 1 1 calc((100% - 60px) / 3); /* 3 card trên 1 hàng */
+}
+
+.offer.card {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 30px 20px;
+  min-height: 250px;
+  background-size: contain; /*sửa ảnh không tràn*/
+  background-position: center;
+  background-repeat: no-repeat; /*không bị lặp khi ảnh nhỏ0*/
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.offer.card:hover {
+  transform: scale(1.05);
+}
+
+.offer.card p {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.offer.card h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: auto;
+}
+
+.offer.card a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: auto;
+  align-self: flex-start;
+}
+
+.offer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.offer.card a:hover {
+  background-color: #ff6a00;
+}
+
+.card-1 {
+  background-image: url("./images/offer-banner-1.jpg");
+}
+.card-2 {
+  background-image: url("./images/offer-banner-2.jpg");
+}
+.card-3 {
+  background-image: url("./images/offer-banner-3.jpg");
+}
+
+/*product*/
+.section.product {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.title.product {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.title.product .highlight {
+  color: #f97316;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  padding: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+
+  position: relative;
+}
+
+.product-image::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.left-hd {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.logo {
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #ffff;
-  font-weight: 500;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.menu ul li a:hover {
-  color: red;
-}
-
-.right-hd {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.right-hd button {
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.right-hd button:hover {
-  font-size: 20px;
-}
-
-/* Hero */
-.hero {
-  height: 100vh;
-  background-image: url("./images/hero-banner.jpg");
-  background-size: cover;
+  height: 100%;
+  background-image: var(--hover-img);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
-  padding-top: 120px;
-  padding-left: 200px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-}
-.hero h1 {
-  font-size: 40px; /* Cỡ chữ phần đầu */
-  line-height: 1.2;
-  margin-bottom: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
 }
 
-.hero .span {
-  font-weight: 400;
-  font-size: 40px;
-  display: block;
+.product-image:hover::after {
+  opacity: 1;
 }
 
-.hero .main-title {
-  font-weight: 700;
-  font-size: 70px; /* Cho to hơn rõ rệt */
-  display: block;
-  margin-top: 4px;
+.product-rating {
+  color: #facc15;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
-.btn {
-  width: 130px;
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-price {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/*service*/
+.section.service {
+  padding: 60px 0;
   text-align: center;
-  height: 40px;
-  line-height: 40px;
+}
+
+.service-header {
+  margin-bottom: 40px;
+}
+
+.service-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.service-title .highlight {
+  color: #f97316;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  padding: 20px;
+}
+
+.service-img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service-name {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/*CTA*/
+.section.cta {
+  position: relative;
+  background-image: url("./images/cta-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: #111;
+  overflow: hidden;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 0;
+}
+
+.cta-cat {
+  position: relative;
+  z-index: 1;
+  max-height: 500px;
+  object-fit: contain;
+  margin-left: 5%;
+  flex-shrink: 0;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.cta-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-title strong {
+  color: #111;
+}
+
+.cta-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
   background-color: #000;
   color: #fff;
+  padding: 12px 24px;
+  border-radius: 999px;
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 20px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: orangered;
+.cta-button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/*brand*/
+.section.brand {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.brand-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.brand-title span {
+  color: #f15a24;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.brand-logo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.1);
+}
+
+/*footer*/
+:root {
+  --footer-bg: url("./images/footer-bg.jpg");
+}
+
+/* Footer container */
+.footer {
+  background-color: #1f1f22;
+  background-image: var(--footer-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 150px 20px 30px;
+  font-family: Arial, sans-serif;
+  height: 520px;
+}
+
+/* Footer top section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer column */
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+/* Footer logo và contact */
+.footer-col h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 15px;
+  color: #ccc;
+  margin: 8px 0;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+/* icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #f97316;
+  color: #fff;
+}
+
+/* Footer bottom logos */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.footer-bottom img {
+  height: 30px;
+  object-fit: contain;
 }
